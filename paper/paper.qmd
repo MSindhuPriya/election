@@ -3,7 +3,6 @@ title: "My title"
 subtitle: "My subtitle if needed"
 author: 
   - First author
-  - Another author
 thanks: "Code and data are available at: LINK."
 date: today
 date-format: long
@@ -49,6 +48,7 @@ Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 #| label: fig-bills
 #| fig-cap: Bills of penguins
 #| echo: false
+#| eval: false
 
 ggplot(penguins, aes(x = island, fill = species)) +
   geom_bar(alpha = 0.8) +
